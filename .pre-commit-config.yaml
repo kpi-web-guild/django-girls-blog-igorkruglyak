@@ -50,4 +50,5 @@ repos:
     name: PyLint
     files: \.py$
     entry: python3 -m pylint.__main__
-    args: []
+    args:
+    - --good-names=urlpatterns
