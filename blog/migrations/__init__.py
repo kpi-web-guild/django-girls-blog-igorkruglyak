@@ -1,1 +1,1 @@
-"""Django website."""
+"""DB migrations."""
