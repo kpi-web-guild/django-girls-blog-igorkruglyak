@@ -8,7 +8,7 @@ SECRET_KEY = '$!y$m2+%-@^mx!kizb=6s!9(0@*mh)n*xyuc)hsx74@uc+-^r$'
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
+ALLOWED_HOSTS = ['127.0.0.1', '.herokuapp.com']
 
 
 # Application definition
