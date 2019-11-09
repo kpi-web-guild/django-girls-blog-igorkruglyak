@@ -2,6 +2,9 @@
 
 import os
 
+import dj_database_url
+
+
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 SECRET_KEY = '$!y$m2+%-@^mx!kizb=6s!9(0@*mh)n*xyuc)hsx74@uc+-^r$'
@@ -116,3 +119,6 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 # Add compression and caching support
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+_DB_FROM_ENV = dj_database_url.config(conn_max_age=500)
+DATABASES['default'].update(_DB_FROM_ENV)
