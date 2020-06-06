@@ -52,5 +52,6 @@ repos:
     files: \.py$
     entry: python3 -m pylint.__main__
     args:
+    - --load-plugins=pylint_django
     - --good-names=urlpatterns
     exclude: blog/migrations/
