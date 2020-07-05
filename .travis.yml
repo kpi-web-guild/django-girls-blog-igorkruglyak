@@ -5,3 +5,8 @@ cache: pip
 before_install:
 - pip install -r test-requirements.txt
 script: pre-commit run --all-files
+jobs:
+  include:
+  - before_install: []
+    script:
+    - python manage.py tests
