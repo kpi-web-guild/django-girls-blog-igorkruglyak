@@ -38,7 +38,7 @@ class ModelPostTest(TestCase):
         self.test_post.publish()
         self.assertEqual(
             self.test_post.published_date, datetime(
-                day=27, month=6, year=2020,
+                day=1, month=4, year=2020,
                 tzinfo=timezone.get_current_timezone(),
             ),
         )

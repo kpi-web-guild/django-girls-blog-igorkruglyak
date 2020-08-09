@@ -5,9 +5,11 @@ python:
 - 3.8
 cache: pip
 script:
-- python manage.py test
+- python manage.py test --verbosity=2
 jobs:
   include:
   - install:
     - pip install -r test-requirements.txt
     script: pre-commit run --all-files
+env:
+   - DATABASE_URL=sqlite://
